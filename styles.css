@@ -1,0 +1,246 @@
+/* التنسيق العام */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+}
+
+/* الهيدر */
+header {
+    background-color: #111;
+    color: gold;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: gold;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+/* قسم الترحيب */
+#welcome-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+#welcome-section h2 {
+    font-size: 3em;
+    color: #333;
+}
+
+#welcome-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.cta-button {
+    background-color: gold;
+    color: #333;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0c700;
+}
+
+/* قسم خدمات الموقع */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: inline-block;
+    margin: 20px;
+    padding: 40px;
+    background-color: #333;
+    color: gold;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* قسم تجربة النظارات الافتراضية */
+#virtual-tryon {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaeaea;
+}
+
+#virtual-tryon h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#virtual-tryon p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* قسم الدفع */
+#payment {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#payment h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.payment-methods img {
+    margin: 20px;
+    width: 120px;
+}
+
+/* قسم الشروط والسياسات */
+#terms {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#terms h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#terms a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: gold;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#terms a:hover {
+    background-color: #e0c700;
+}
+
+/* الفوتر */
+footer {
+    background-color: #111;
+    color: gold;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #e0c700;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    #services .service-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    #welcome-section {
+        padding: 40px 20px;
+    }
+
+    #virtual-tryon {
+        padding: 40px 20px;
+    }
+
+    #payment {
+        padding: 40px 20px;
+    }
+
+    #terms {
+        padding: 40px 20px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}

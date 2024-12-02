@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ypsilon Eyewear - Luxury Eyewear Experience</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ستحتاج إلى إضافة ملف CSS خارجي هنا -->
+    <style>
+        /* التنسيق الأساسي */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: #333;
+            color: gold;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* شريط التنقل */
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: gold;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        /* قسم الترحيب */
+        #welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #welcome-section h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #welcome-section p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* قسم خدمات الموقع */
+        #services {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #services h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .service-box {
+            display: inline-block;
+            margin: 20px;
+            padding: 30px;
+            background-color: #333;
+            color: gold;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: scale(1.1);
+        }
+
+        .service-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* قسم تجربة النظارات */
+        #virtual-tryon {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eaeaea;
+        }
+
+        #virtual-tryon h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #virtual-tryon p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* قسم الدفع */
+        #payment {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #payment h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .payment-methods img {
+            margin: 20px;
+            width: 100px;
+        }
+
+        /* قسم الشروط */
+        #terms {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #terms h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #111;
+            color: gold;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: gold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ypsilon Eyewear</h1>
+        <p>Discover the most luxurious and professional eyewear</p>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="#welcome-section">Home</a>
+        <a href="#services">Services</a>
+        <a href="#virtual-tryon">Virtual Try-On</a>
+        <a href="#payment">Payment</a>
+        <a href="#terms">Terms</a>
+    </nav>
+
+    <!-- قسم الترحيب -->
+    <section id="welcome-section">
+        <h2>Welcome to Ypsilon Eyewear</h2>
+        <p>Your journey to the most stylish and high-quality eyewear starts here.</p>
+        <button class="cta-button" onclick="window.location.href='#services'">Explore Our Services</button>
+    </section>
+
+    <!-- قسم خدمات الموقع -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Personalized Consultation</h3>
+            <p>Expert advice to help you choose the perfect eyewear.</p>
+        </div>
+        <div class="service-box">
+            <h3>Wide Selection</h3>
+            <p>A range of premium eyewear for every style and need.</p>
+        </div>
+        <div class="service-box">
+            <h3>Delivery Worldwide</h3>
+            <p>Global shipping for your convenience, delivered right to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- قسم تجربة النظارات الافتراضية -->
+    <section id="virtual-tryon">
+        <h2>Try On Glasses Virtually</h2>
+        <p>Use our advanced 3D technology to try on eyewear before you buy it!</p>
+        <button class="cta-button" onclick="window.location.href='#payment'">Try It Now</button>
+    </section>
+
+    <!-- قسم الدفع -->
+    <section id="payment">
+        <h2>Payment Methods</h2>
+        <p>Secure and easy payment options for your convenience.</p>
+        <div class="payment-methods">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
+            <img src="https://www.gstatic.com/images/branding/payment/stripe/stripe_logo.png" alt="Stripe">
+            <p>We accept PayPal, Stripe, and credit cards.</p>
+        </div>
+    </section>
+
+    <!-- قسم الشروط والسياسات -->
+    <section id="terms">
+        <h2>Terms & Conditions</h2>
+        <p>Read our policies for return, shipping, and customer service.</p>
+        <a href="terms.html" class="cta-button">Read More</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ypsilon Eyewear. All rights reserved. <br>
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+        // يمكن إضافة أكواد JavaScript هنا لتفاعل الموقع مثل تغيير اللغة أو تقديم عروض خاصة
+    </script>
+
+</body>
+
+</html>
